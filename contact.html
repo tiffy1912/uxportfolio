@@ -22,41 +22,54 @@
         </ul>
       </nav>
     </header>
+
     <section class="form">
-      <form
-        action="https://script.google.com/macros/s/AKfycbw7l2RhT58EczFn9x4X9ie8j3SLOQh4mcYhJAlmxX4srXhl_XNe9Bxs8iQNvucdGLVp/exec"
-        method="POST"
-      >
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required
-        /><br /><br />
+      <div class="suggest">
+        <img src="./pic/contact.jpg" alt="contact" />
+      </div>
+      <div class="form">
+        <form
+          id="contactForm"
+          action="https://script.google.com/macros/s/AKfycbwQ2jYACEpatKFu0W8DBNJVLYeVDJVo4rGfIozZRAXGLWAI_mhmmOZgvODJixJpr9jBnQ/exec"
+          method="POST"
+        >
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          /><br /><br />
 
-        <label for="email">E-mail</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your E-mail"
-          required
-        /><br /><br />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your E-mail"
+            required
+          /><br /><br />
 
-        <label for="suggestion">Suggestion</label>
-        <textarea
-          name="suggestion"
-          id="suggestion"
-          cols="30"
-          rows="10"
-          placeholder="Your Suggestion"
-          required
-        ></textarea>
-        <button type="submit">提交表單</button>
-      </form>
+          <label for="suggestion">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">提交表單</button>
+        </form>
+      </div>
     </section>
+
+    <div id="successPopup" class="popup">
+      <p>表單提交成功！</p>
+    </div>
+
     <footer>
       <p>&copy; 2025 Yani Chen. All rights reserved.</p>
     </footer>

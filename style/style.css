@@ -277,7 +277,80 @@ body section.prototype div.prototype iframe {
   width: 100%;
 }
 body section.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* 垂直置中 */
+  justify-content: center; /* 水平置中 */
+  margin: 0 auto;
   margin-top: 6rem;
+  width: 75%;
+  max-width: 800px; /* 限制最大寬度，防止過寬 */
+  gap: 20px; /* 設定 div 之間的間距 */
+}
+body section.form div.suggest,
+body section.form div.form {
+  flex: 1 1 350px; /* 確保兩個 div 有固定的最小寬度，並且不會變得太大 */
+  max-width: 400px; /* 限制最大寬度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.form div.suggest {
+  overflow: hidden; /* 隱藏超出的部分 */
+}
+body section.form div.suggest img {
+  width: 180%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateX(-100px);
+}
+body section.form div.form {
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-family: "Chonburi", serif;
+  color: rgb(18, 18, 18);
+}
+body section.form div.form input,
+body section.form div.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+body section.form div.form button {
+  font-family: serif;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(179, 221, 219);
+  color: rgb(18, 18, 18);
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+body section.form div.form button:hover {
+  background-color: rgb(18, 18, 18);
+  color: rgb(179, 221, 219);
+}
+body div.popup {
+  display: none; /* 預設隱藏 */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(179, 221, 219);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(18, 18, 18);
 }
 body footer {
   margin: 10px 0px;
@@ -287,11 +360,18 @@ body footer p {
   display: flex;
   justify-content: center;
   font-size: 1rem;
+  font-family: serif;
 }
 
 @media screen and (max-width: 700px) {
   section.introction_index {
     flex-direction: column !important;
+  }
+  section.form {
+    flex-direction: column !important;
+  }
+  section.form div.suggest {
+    margin-left: 0px !important;
   }
 }
 @media screen and (max-width: 500px) {

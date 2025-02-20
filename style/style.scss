@@ -296,7 +296,86 @@ body {
   }
 
   section.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中 */
+    margin: 0 auto;
     margin-top: 6rem;
+    width: 75%;
+    max-width: 800px; /* 限制最大寬度，防止過寬 */
+    gap: 20px; /* 設定 div 之間的間距 */
+
+    div.suggest,
+    div.form {
+      flex: 1 1 350px; /* 確保兩個 div 有固定的最小寬度，並且不會變得太大 */
+      max-width: 400px; /* 限制最大寬度 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.suggest {
+      overflow: hidden; /* 隱藏超出的部分 */
+      img {
+        width: 180%;
+        height: auto;
+        object-fit: cover;
+        transform: translateX(-100px);
+      }
+    }
+
+    div.form {
+      padding: 10px;
+      background-color: #f9f9f9;
+      font-family: "Chonburi", serif;
+      color: rgb(18, 18, 18);
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+
+      button {
+        font-family: serif;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(179, 221, 219, 1);
+        color: rgb(18, 18, 18);
+        font-size: 1rem;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-weight: 500;
+      }
+
+      button:hover {
+        background-color: rgb(18, 18, 18);
+        color: rgba(179, 221, 219, 1);
+      }
+    }
+  }
+
+  div.popup {
+    display: none; /* 預設隱藏 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(179, 221, 219, 1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(18, 18, 18);
   }
 
   footer {
@@ -306,6 +385,7 @@ body {
       display: flex;
       justify-content: center;
       font-size: 1rem;
+      font-family: serif;
     }
   }
 }
@@ -313,6 +393,12 @@ body {
 @media screen and (max-width: 700px) {
   section.introction_index {
     flex-direction: column !important;
+  }
+  section.form {
+    flex-direction: column !important;
+    div.suggest {
+      margin-left: 0px !important;
+    }
   }
 }
 
