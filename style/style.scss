@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  color: rgb(18, 18, 18);
+}
+
+h2 {
+  font-family: "Chonburi", serif;
+}
+
+div.arrow {
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  header {
+    nav {
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0; /* 確保從畫面最左邊開始 */
+      width: 100%; /* 讓 nav 佔滿整個螢幕寬度 */
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      ul {
+        display: flex;
+        li {
+          list-style-type: none;
+          margin: 0.7rem;
+          a {
+            color: rgb(18, 18, 18);
+            text-decoration: none;
+            font-size: 1.3rem;
+            margin: 0rem 0.3rem;
+            font-family: serif;
+            &:hover {
+              color: rgb(56, 144, 107);
+              transition: all 0.3s ease;
+              font-weight: bold;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.indeximg {
+    width: 80%;
+    top: 5.5rem;
+    height: 25rem; /* 設定圖片高度 */
+    margin: 0 auto; /* 置中 */
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+  section.name {
+    div.name {
+      h1 {
+        margin-top: 6rem;
+        text-align: center;
+        font-family: "Chonburi", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 9rem;
+      }
+      p {
+        margin-top: -10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: serif;
+        font-size: 1.5rem;
+        font-weight: 1000;
+      }
+    }
+  }
+
+  section.introction_index {
+    background: linear-gradient(
+      to bottom,
+      rgba(179, 221, 219, 1),
+      rgb(250, 250, 250)
+    );
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5% 10% 5% 10%;
+    gap: 25px;
+
+    div.intropic1 {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 300px; /* 設定最大寬度，避免過度放大 */
+      height: auto;
+      overflow: hidden; /* 隱藏超出的部分 */
+
+      display: flex;
+      align-items: center; /* 讓圖片垂直置中 */
+      justify-content: center; /* 讓圖片水平置中 */
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    div.intropic2 {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 600px; /* 設定最大寬度，避免過度放大 */
+      height: auto;
+      overflow: hidden; /* 隱藏超出的部分 */
+      display: flex;
+      align-items: center; /* 讓圖片垂直置中 */
+      justify-content: center; /* 讓圖片水平置中 */
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  hr {
+    border: none; /* 移除預設邊框 */
+    height: 1px; /* 設定線條高度 */
+    background-color: rgb(18, 18, 18); /* 設定線條顏色 */
+    margin: 0 auto; /* 設定上下間距 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  div.introduction_index {
+    p {
+      margin: 1.8rem 0rem 1.5rem 0rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      font-family: "Chonburi", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    div.intro {
+      width: 70%;
+      background-color: rgb(250, 250, 250);
+      margin: 10px auto;
+      padding: 10px 20px;
+      margin-bottom: 5rem;
+      border: 1px solid rgb(250, 250, 250);
+      border-radius: 1ch;
+      p {
+        margin: 0 auto; /* 讓 `p` 內文置中 */
+        display: flex;
+        justify-content: center;
+        font-size: 1.1rem;
+        font-family: serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+  }
+
+  section.intro1 {
+    margin-top: 5rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(179, 221, 219, 1),
+      rgb(250, 250, 250)
+    );
+    h1 {
+      font-family: "Chonburi", serif;
+      padding-top: 4rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      font-size: 5rem;
+    }
+    h2 {
+      padding-top: 3rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    section.introduction {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 3% 15% 3% 15%;
+      gap: 20px;
+      div.intropro {
+        overflow: hidden; /* 隱藏超出的部分 */
+        flex: 0 0 300px;
+        height: 200px;
+        align-items: center; /* 讓圖片垂直置中 */
+        justify-content: center; /* 讓圖片水平置中 */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 3px;
+        }
+      }
+      div.intro {
+        flex: 1 1 auto;
+        height: auto;
+        max-width: 600px;
+        p {
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+
+  section.designprocess {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 3rem 0rem 3rem 0rem;
+    }
+    div.step1,
+    div.step2 {
+      margin: auto;
+      width: 65%;
+      h2 {
+        margin-left: 0; /* 讓 h2 靠右對齊 */
+        margin-right: auto; /* 確保 h2 靠右 */
+        margin-bottom: 1.1rem;
+        display: block;
+        width: fit-content; /* 讓 h2 根據內容自動調整寬度 */
+        text-align: center;
+        padding: 5px 20px;
+        font-size: 1.2rem;
+        background-color: rgba(179, 221, 219, 1);
+        border-radius: 3px; /* 讓色塊圓角更好看 */
+      }
+      p {
+        margin: auto;
+        margin-top: 0.5rem;
+      }
+    }
+    div.step2 {
+      margin-bottom: 4rem;
+    }
+  }
+
+  section.prototype {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2 {
+      padding-top: 3rem;
+      font-size: 2rem;
+    }
+    div.prototype {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 2.5rem;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+
+  section.form {
+    margin-top: 6rem;
+  }
+
+  footer {
+    margin: 10px 0px;
+    padding: 20px 0px;
+    p {
+      display: flex;
+      justify-content: center;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section.introction_index {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.name {
+    div.name {
+      h1 {
+        font-size: 4rem !important; /* 使用 !important 來強制應用 */
+        margin-bottom: 10px !important;
+      }
+      p {
+        font-size: 1.1rem !important;
+      }
+    }
+  }
+}
