@@ -43,7 +43,7 @@ body header nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 0rem;
 }
 body header nav ul {
   display: flex;
@@ -164,24 +164,23 @@ body div.introduction_index div.intro {
   margin: 10px auto;
   padding: 10px 20px;
   margin-bottom: 5rem;
-  border: 1px solid rgb(250, 250, 250);
-  border-radius: 1ch;
 }
 body div.introduction_index div.intro p {
-  margin: 0 auto; /* 讓 `p` 內文置中 */
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   font-size: 1.1rem;
-  font-family: serif;
+  font-family: "Noto Serif HK", serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.7;
 }
 body section.intro1 {
   margin-top: 5rem;
   background: linear-gradient(to bottom, rgb(179, 221, 219), rgb(250, 250, 250));
 }
 body section.intro1 h1 {
-  font-family: "Chonburi", serif;
+  font-family: "Noto Serif HK", serif;
   padding-top: 4rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -205,7 +204,7 @@ body section.intro1 section.introduction {
 body section.intro1 section.introduction div.intropro {
   overflow: hidden; /* 隱藏超出的部分 */
   flex: 0 0 300px;
-  height: 200px;
+  height: 250px;
   align-items: center; /* 讓圖片垂直置中 */
   justify-content: center; /* 讓圖片水平置中 */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -223,7 +222,10 @@ body section.intro1 section.introduction div.intro {
   max-width: 600px;
 }
 body section.intro1 section.introduction div.intro p {
+  font-size: 18px;
   line-height: 1.8;
+  font-family: "Noto Serif HK", serif;
+  font-weight: 400;
 }
 body section.designprocess h2 {
   font-size: 2rem;
@@ -245,14 +247,17 @@ body section.designprocess div.step2 h2 {
   width: fit-content; /* 讓 h2 根據內容自動調整寬度 */
   text-align: center;
   padding: 5px 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   background-color: rgb(179, 221, 219);
   border-radius: 3px; /* 讓色塊圓角更好看 */
 }
 body section.designprocess div.step1 p,
 body section.designprocess div.step2 p {
   margin: auto;
-  margin-top: 0.5rem;
+  font-family: "Noto Serif HK", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
 }
 body section.designprocess div.step2 {
   margin-bottom: 4rem;
@@ -322,7 +327,7 @@ body section.form div.form textarea {
   box-sizing: border-box;
 }
 body section.form div.form button {
-  font-family: serif;
+  font-family: "Noto Serif HK", serif;
   width: 100%;
   padding: 10px;
   background-color: rgb(179, 221, 219);
@@ -332,7 +337,7 @@ body section.form div.form button {
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-weight: 500;
+  font-weight: 600;
 }
 body section.form div.form button:hover {
   background-color: rgb(18, 18, 18);

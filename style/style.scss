@@ -41,7 +41,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
+      padding: 1rem 0rem;
       ul {
         display: flex;
         li {
@@ -176,16 +176,15 @@ body {
       margin: 10px auto;
       padding: 10px 20px;
       margin-bottom: 5rem;
-      border: 1px solid rgb(250, 250, 250);
-      border-radius: 1ch;
       p {
-        margin: 0 auto; /* 讓 `p` 內文置中 */
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         font-size: 1.1rem;
-        font-family: serif;
+        font-family: "Noto Serif HK", serif;
         font-weight: 400;
         font-style: normal;
+        line-height: 1.7;
       }
     }
   }
@@ -198,7 +197,7 @@ body {
       rgb(250, 250, 250)
     );
     h1 {
-      font-family: "Chonburi", serif;
+      font-family: "Noto Serif HK", serif;
       padding-top: 4rem;
       padding-bottom: 1rem;
       text-align: center;
@@ -221,7 +220,7 @@ body {
       div.intropro {
         overflow: hidden; /* 隱藏超出的部分 */
         flex: 0 0 300px;
-        height: 200px;
+        height: 250px;
         align-items: center; /* 讓圖片垂直置中 */
         justify-content: center; /* 讓圖片水平置中 */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -237,7 +236,10 @@ body {
         height: auto;
         max-width: 600px;
         p {
+          font-size: 18px;
           line-height: 1.8;
+          font-family: "Noto Serif HK", serif;
+          font-weight: 400;
         }
       }
     }
@@ -261,13 +263,16 @@ body {
         width: fit-content; /* 讓 h2 根據內容自動調整寬度 */
         text-align: center;
         padding: 5px 20px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         background-color: rgba(179, 221, 219, 1);
         border-radius: 3px; /* 讓色塊圓角更好看 */
       }
       p {
         margin: auto;
-        margin-top: 0.5rem;
+        font-family: "Noto Serif HK", serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.8;
       }
     }
     div.step2 {
@@ -343,7 +348,7 @@ body {
       }
 
       button {
-        font-family: serif;
+        font-family: "Noto Serif HK", serif;
         width: 100%;
         padding: 10px;
         background-color: rgba(179, 221, 219, 1);
@@ -353,7 +358,7 @@ body {
         border-radius: 3px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        font-weight: 500;
+        font-weight: 600;
       }
 
       button:hover {

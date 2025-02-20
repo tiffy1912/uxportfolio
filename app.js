@@ -33,7 +33,7 @@ document
         // 3 秒後關閉彈窗並跳回首頁
         setTimeout(() => {
           popup.style.display = "none";
-          window.location.href = "https://tiffy1912.github.io/uxportfolio/";
+          window.location.href = "https://tiffy1912.github.io/uxprofolio/";
         }, 3000);
       } else {
         alert("提交失敗，請稍後再試！");
